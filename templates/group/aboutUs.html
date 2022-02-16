@@ -1,2 +1,22 @@
-<h1>
-about us</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>about us page</title>
+</head>
+<body>
+    <h1>
+    {% if isActive %}
+        <h1>active is True</h1>
+        {% else %}
+        <h1>active is False</h1>
+        
+    {% endif %}
+    </h1>
+    {% if age > 18 %}
+        <h1>User is eligible</h1>
+        {% else %}
+        <h1>User is not eligible</h1>
+    {% endif %}
+   
+</body>
+</html>

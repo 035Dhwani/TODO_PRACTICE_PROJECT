@@ -1,3 +1,4 @@
+from multiprocessing import context
 from django.http import HttpResponse
 from django.shortcuts import render
 
@@ -6,10 +7,20 @@ def grouping(request):
     return HttpResponse("group is called..")
 
 def contactUs(request):
-    return render(request,'group/contactUs.html')
+    context={
+        'contact_name': ["dhwani", "shreya", "abhi", "deep", "sweta", "payal", "keval"],
+    }
+    return render(request,'group/contactUs.html',context)
 
 def index(request):
-    return render(request,'group/index.html')
+    context={
+        'name': 'FLIPKART',
+    }
+    return render(request,'group/index.html',context)
 
 def aboutUs(request):
-    return render(request,'group/aboutUs.html')
+    context={
+        'isActive': 'False',
+        'age': 20
+    }
+    return render(request,'group/aboutUs.html',context)
