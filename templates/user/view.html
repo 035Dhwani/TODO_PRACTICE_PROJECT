@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>view user</title>
+</head>
+<body>
+   {% for i in user %}
+        {% for value in i %} 
+            {{ value }} 
+            <br>
+        {% endfor %}
+   {% endfor %} 
+</body>
+</html>
