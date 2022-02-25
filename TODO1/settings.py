@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'product',
     'company',
     'user',
-    'student',
     'ticket',
     'module',
     'core',
