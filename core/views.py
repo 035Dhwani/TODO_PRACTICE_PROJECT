@@ -6,3 +6,5 @@ class UserLogin(LoginView):
 
 class Logout(LogoutView):
     pass
+
+
