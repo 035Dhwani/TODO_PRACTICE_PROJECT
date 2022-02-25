@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block container %}
+  <div class="card">
+      <div class="card-header">
+          <h5 class="card-title">MODULE DETAIL</h5>
+      </div>
+      <div class="card-body">
+         <dl class="row">
+            <dt class="col-sm-9">Module Title</dt>
+            <dd class="col-sm-3">{{temp.title}}</dd>
+         </dl>
+         <dl class="row">
+            <dt class="col-sm-9">Module Description</dt>
+            <dd class="col-sm-3">{{temp.description}}</dd>
+        </dl>
+         <dl class="row"> <dt class="col-sm-9">Module Technology</dt>
+            <dd class="col-sm-3">{{temp.technology}}</dd>
+        </dl>
+      </div>
+  </div>
+{% endblock %}

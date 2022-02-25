@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block container %}
+  <table class="table">
+      <tr>
+          <thead class="thread-light">
+              <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">TITLE</th>
+                  <th scope="col">DESCRIPTION</th>
+                  <th scope="col">TECHNOLOGY</th>
+                  <th scope="col">ESTIMATED HOURS</th>
+                  <th scope="col">ACTION</th>
+              </tr>
+          </thead>
+          <tbody>
+              {% for module in temp  %}
+              <tr>
+                  <td><a href = "{% url 'detail_module' module.pk%}">{{module.id}}</a></td>
+                  <td>{{module.title}}</td>
+                  <td>{{module.description}}</td>
+                  <td>{{module.technology}}</td>
+                  <td>{{module.estimatehours}}</td>
+                  <td><a class = "btn btn-danger" href = "{% url 'delete_module' module.pk%}">Delete</a></td>
+                  <td><a class = "btn btn-primary" href = "{% url 'update_module' module.pk%}">Update</a></td>
+              </tr>
+                
+              {% endfor %}
+          </tbody>
+      </tr>
+  </table>
+{% endblock  %}
