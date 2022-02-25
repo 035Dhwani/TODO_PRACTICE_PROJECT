@@ -21,7 +21,6 @@ urlpatterns = [
     path('product/',include('product.urls')),
     path('group/',include('group.urls')),
     path('user/',include('user.urls')),
-    path('student/',include('student.urls')),
     path('ticket/',include('ticket.urls')),
     path('module/',include('module.urls')),
     path('core/',include('core.urls')),
