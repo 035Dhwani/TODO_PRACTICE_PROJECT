@@ -21,7 +21,6 @@ class ViewModule(ListView):
     context_object_name = 'temp'
     template_name = 'module/view.html'
     
-
 class DetailModule(DetailView):
     model = Module
     context_object_name = 'temp'
