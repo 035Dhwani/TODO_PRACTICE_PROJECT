@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from .models import user
 
-# Create your views here.
+# Create your views here..
 def addUser(request):
     emp = user(uname='dhwani', uage=21, uemail='d123@gmail.com', ucontact=123456789)
     emp.save()

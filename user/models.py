@@ -6,7 +6,6 @@ class user(models.Model):
     uage = models.IntegerField()
     uemail = models.EmailField()
     ucontact = models.IntegerField()
-
     class Meta:
         db_table = 'user1'
        
