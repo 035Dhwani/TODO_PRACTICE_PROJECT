@@ -17,6 +17,7 @@ class DeleteTicket(DeleteView):
 
 def index(request):
      return render(request, 'ticket/index.html')
+     
 
 class UpdateTicket(UpdateView):
     model = Ticket

@@ -4,6 +4,7 @@ from django.urls import path
 from .views import CreateTicket,DeleteTicket,UpdateTicket
 from ticket import views
 
+
 urlpatterns = [
 
     path('add/',CreateTicket.as_view()),
