@@ -4,6 +4,7 @@ from django.urls import path,include
 
 from .views import AddModule,ViewModule,DetailModule,DeleteModule,UpdateModule
 
+
 urlpatterns = [
   
     path('add/',AddModule.as_view(), name='add_module'),
