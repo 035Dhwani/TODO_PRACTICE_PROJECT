@@ -20,6 +20,7 @@ class ViewModule(ListView):
     temp = model.objects.all()
     context_object_name = 'temp'
     template_name = 'module/view.html'
+    
 
 class DetailModule(DetailView):
     model = Module
